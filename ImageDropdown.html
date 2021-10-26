@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ImageDropDown</title>
+    <style>
+      .dropdown{
+          position: relative;
+          display: inline-block;
+      }
+      .dropdowncontent{
+          display: none;
+          position: absolute;
+          background-color: yellowgreen;
+          min-width: 160px;
+          box-shadow: rgba(0, 0, 0 0.2);
+          z-index: 1;
+      }
+      .dropdown:hover .dropdowncontent{
+          display: block;
+      }
+      .desc{
+          padding: 15px;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown"> 
+        <img src="Pic/goose.jpg" alt="Goose" width="120px"/> 
+        <div class="dropdowncontent">
+            <img src="Pic/goose.jpg" alt="Goose" width="300px"/> 
+            <div class="desc">
+                The god
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
