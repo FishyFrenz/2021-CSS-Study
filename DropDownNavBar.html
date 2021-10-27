@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DropDownNavBar</title>
+    <style>
+        .NB{
+            overflow: hidden;
+            background-color: #ff0000;
+        }
+        .NB a{
+            float: left;
+            font-size: 17px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .NB a:hover, .DD:hover .DB{
+            background-color: blue;
+        }
+        .DD{
+            float: left;
+            overflow: hidden;
+        }
+        .DD .DB{
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin:0;
+        }
+        .DDC{
+            display: none;
+            position: absolute;
+            background-color: aquamarine;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+            z-index: 1;
+        }
+        .DDC a{
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .DD:hover .DDC{
+            display: block;
+        }
+        .DDC a:hover{
+            background-color:brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="NB">
+        <a href="#" class="active">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <div class="DD">
+            <button class="DB"> Socials
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="DDC">
+                <a href="#">FaceBook</a>
+                <a href="#">Twitter</a>
+                <a href="#">SnapChat</a>
+                <a href="#">WhatsApp</a>
+                <a href="#">Signal</a>
+                <a href="#">LinkedIt</a>
+            </div>
+        </div>
+        <a href="#">Contacts</a>
+    </div>
+</body>
+</html>
